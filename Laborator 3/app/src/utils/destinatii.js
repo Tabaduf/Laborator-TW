@@ -1,4 +1,4 @@
-// Funcții „pure”: nu modifică lista primită, întorc mereu o listă NOUĂ.
+// Funcții "pure": nu modifică lista primită, întorc mereu o listă NOUĂ.
 // De asta React observă schimbarea când le folosim cu setDestinatii.
 
 export const getNevizitate = (list) => list.filter((d) => !d.vizitat)

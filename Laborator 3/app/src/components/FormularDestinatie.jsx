@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-// Formular „controlat”: fiecare câmp își ține valoarea în stare,
+// Formular "controlat": fiecare câmp își ține valoarea în stare,
 // iar ce se vede în câmp vine din stare (value={...}).
 export default function FormularDestinatie({ onAdd }) {
   const [oras, setOras] = useState('')
