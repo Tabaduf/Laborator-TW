@@ -1,0 +1,198 @@
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.rezumat {
+  color: #4b5563;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.formular {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.formular input {
+  flex: 1;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+  min-width: 0;
+}
+
+button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 7px;
+  background: #5b3fd9;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.info {
+  padding: 0.8rem;
+  border-radius: 9px;
+  background: #f3f4f6;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #d8dbe0;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.2rem 0;
+}
+
+.card .tara,
+.card .zile {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.card button {
+  margin-top: 0.7rem;
+  width: 100%;
+}
+
+.card.vizitat {
+  background: #f0fdf4;
+  border-color: #86efac;
+}
+
+.card.vizitat button {
+  background: #16a34a;
+}
+
+/* ===== Laboratorul 4 ===== */
+
+.formular {
+  align-items: flex-start;
+}
+
+.camp {
+  flex: 1;
+  min-width: 0;
+}
+
+.camp input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cautare {
+  margin-bottom: 1.2rem;
+}
+
+.cautare input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+}
+
+/* ===== Exercițiul 3d: stările cererii și formularul ===== */
+
+.stare {
+  padding: 0.8rem 1rem;
+  border-radius: 9px;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.stare.eroare {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.formular input.invalid {
+  border-color: #dc2626;
+  background: #fff5f5;
+}
+
+.eroare-camp {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: #dc2626;
+}
+
+button:disabled {
+  background: #a5a3c2;
+  cursor: not-allowed;
+}
+
+.gol {
+  padding: 1.5rem;
+  border: 1px dashed #c3c7cf;
+  border-radius: 9px;
+  text-align: center;
+  color: #6b7280;
+}
+
+/* ===== Exercițiul 4: panoul de statistici, corectat ===== */
+
+.panou {
+  margin-bottom: 1.4rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d8dbe0;
+  border-radius: 10px; /* Corectura 6: lipsea unitatea, „10” nu se aplica */
+}
+
+.panou h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.panou label {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.panou input {
+  width: 70px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.panou ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* Corectura 7: regula „.panou h2 { margin: 0; }” de la final a fost ștearsă,
+   pentru că anula margin-bottom-ul titlului de mai sus. */
+
+/* ===== Exercițiul 5c: paginarea ===== */
+
+.paginare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  color: #4b5563;
+}
